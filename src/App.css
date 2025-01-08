@@ -1,0 +1,113 @@
+.password-generator {
+  background-color: #242526;
+  color: #ffffff;
+  padding: 20px;
+  border-radius: 8px;
+  width: 100%;
+  max-width: 350px;
+  margin: 40px auto;
+  text-align: center;
+  font-family: 'Arial', sans-serif;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.password-display-wrapper {
+  display: flex;
+  gap: 10px;
+  align-items: center;
+  margin-bottom: 15px;
+}
+
+.password-display {
+  flex: 1;
+  padding: 10px;
+  border: none;
+  border-radius: 5px;
+  background-color: #3a3b3c;
+  color: #ffffff;
+  font-size: 16px;
+  text-align: center;
+}
+
+.copy-btn {
+  padding: 10px 15px;
+  background-color: #4caf50;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 14px;
+  transition: background-color 0.3s ease;
+}
+
+.copy-btn:hover {
+  background-color: #45a049;
+}
+
+.controls {
+  margin-top: 20px;
+}
+
+.slider-control {
+  margin-bottom: 20px;
+}
+
+.slider-control label {
+  display: block;
+  font-size: 14px;
+  margin-bottom: 8px;
+}
+
+input[type="range"] {
+  width: 100%;
+  height: 6px;
+  background: #3a3b3c;
+  border-radius: 5px;
+  outline: none;
+  cursor: pointer;
+}
+
+input[type="range"]::-webkit-slider-thumb {
+  -webkit-appearance: none;
+  width: 14px;
+  height: 14px;
+  border-radius: 50%;
+  background: #4caf50;
+  cursor: pointer;
+}
+
+input[type="range"]::-webkit-slider-thumb:hover {
+  background: #45a049;
+}
+
+.checkbox-control {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.checkbox-control label {
+  font-size: 14px;
+  cursor: pointer;
+}
+
+input[type="checkbox"] {
+  margin-right: 8px;
+  cursor: pointer;
+}
+
+@media (max-width: 400px) {
+  .password-generator {
+    width: 90%;
+    padding: 15px;
+  }
+
+  .password-display {
+    font-size: 14px;
+  }
+
+  .copy-btn {
+    font-size: 12px;
+    padding: 8px 12px;
+  }
+}
